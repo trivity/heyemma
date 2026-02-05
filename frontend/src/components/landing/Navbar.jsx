@@ -35,7 +35,7 @@ export const Navbar = () => {
       data-testid="navbar"
     >
       <div className="container-custom">
-        <nav className="flex items-center justify-between h-20">
+        <nav className="flex items-center justify-between h-36 md:h-44">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2" data-testid="navbar-logo">
             <img 
