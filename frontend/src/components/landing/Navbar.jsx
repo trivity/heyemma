@@ -41,7 +41,7 @@ export const Navbar = () => {
             <img 
               src={LOGO_URL} 
               alt="HeyEmma" 
-              className="h-12 md:h-16 w-auto object-contain"
+              className="h-16 md:h-20 w-auto object-contain"
               style={{ filter: 'brightness(1.2) contrast(1.1)' }}
             />
           </a>
@@ -73,7 +73,7 @@ export const Navbar = () => {
               className="bg-cyan-500 hover:bg-cyan-400 text-black font-semibold px-6 rounded-full btn-glow transition-all duration-300"
               data-testid="nav-cta-btn"
             >
-              Start Free Trial
+              Book A Call
             </Button>
           </div>
 
@@ -114,7 +114,7 @@ export const Navbar = () => {
                   Log in
                 </Button>
                 <Button className="bg-cyan-500 hover:bg-cyan-400 text-black font-semibold rounded-full">
-                  Start Free Trial
+                  Book A Call
                 </Button>
               </div>
             </div>

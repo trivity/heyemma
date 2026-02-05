@@ -2,7 +2,6 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { 
   UserPlus, 
-  MessageSquare, 
   RefreshCw, 
   Calendar, 
   FileText 
@@ -13,11 +12,6 @@ const features = [
     icon: UserPlus,
     title: 'Auto-creates leads in pipeline',
     description: 'New callers become leads automatically',
-  },
-  {
-    icon: MessageSquare,
-    title: 'Triggers SMS follow-ups',
-    description: 'Instant texts based on call outcomes',
   },
   {
     icon: RefreshCw,

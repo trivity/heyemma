@@ -142,12 +142,9 @@ export const VoiceCloning = () => {
               ))}
             </ul>
 
-            <Button
-              className="bg-purple-500 hover:bg-purple-400 text-white font-semibold px-6 py-5 rounded-full transition-all duration-300"
-              data-testid="view-voice-plans-btn"
-            >
-              View Voice Plans →
-            </Button>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/20 border border-purple-500/30">
+              <span className="text-purple-400 font-semibold">Starting at $1,497</span>
+            </div>
           </motion.div>
         </div>
       </div>

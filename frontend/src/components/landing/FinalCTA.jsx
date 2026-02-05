@@ -6,18 +6,18 @@ import { Button } from '@/components/ui/button';
 const guarantees = [
   {
     icon: CreditCard,
-    title: 'No Credit Card Required',
-    description: 'Start your trial completely free. No payment info needed.',
+    title: 'Transparent Pricing',
+    description: 'No hidden fees. Know exactly what you pay.',
   },
   {
     icon: Shield,
-    title: '14-Day Money-Back Guarantee',
-    description: 'Not happy? Get a full refund, no questions asked.',
+    title: 'Satisfaction Guaranteed',
+    description: 'Not happy? We\'ll make it right.',
   },
   {
     icon: Headphones,
-    title: 'Free Migration Support',
-    description: "We'll help you move from your current tools for free.",
+    title: 'Free Onboarding Support',
+    description: "We'll help you get set up for success.",
   },
   {
     icon: Download,
@@ -46,11 +46,10 @@ export const FinalCTA = () => {
           className="text-center mb-8"
         >
           <h2 className="font-heading text-2xl md:text-4xl font-semibold tracking-tight mb-2">
-            Try it risk-free for <span className="text-gradient">14 days</span>
+            Ready to <span className="text-gradient">get started</span>?
           </h2>
           <p className="text-base text-gray-400 max-w-xl mx-auto">
-            We're so confident you'll love HeyEmma that we offer a complete money-back guarantee. 
-            No risk, no hassle.
+            We're confident HeyEmma will transform your business. Book a call to see how it works.
           </p>
         </motion.div>
 
@@ -97,13 +96,13 @@ export const FinalCTA = () => {
               className="bg-cyan-500 hover:bg-cyan-400 text-black font-semibold px-10 py-6 text-lg rounded-full btn-glow cta-button transition-all duration-300 mb-6"
               data-testid="final-cta-btn"
             >
-              Start Your Free Trial
+              Book A Call
             </Button>
 
             <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-500">
-              <span>No credit card required</span>
-              <span className="hidden sm:inline">•</span>
               <span>Setup in 5 minutes</span>
+              <span className="hidden sm:inline">•</span>
+              <span>Starting at $1,497</span>
             </div>
           </div>
         </motion.div>

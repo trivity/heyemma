@@ -144,7 +144,7 @@ export const Comparison = () => {
                   className="bg-cyan-500 hover:bg-cyan-400 text-black font-semibold px-8 py-5 rounded-full btn-glow transition-all duration-300"
                   data-testid="comparison-cta-btn"
                 >
-                  Start Your Free Trial
+                  Book A Call
                 </Button>
               </div>
               <p className="text-center text-xs text-gray-600 mt-4">

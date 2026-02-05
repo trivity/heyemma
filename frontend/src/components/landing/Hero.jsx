@@ -3,8 +3,8 @@ import { Button } from '@/components/ui/button';
 import { Check, Shield, Clock, Zap } from 'lucide-react';
 
 const trustBadges = [
-  { icon: Check, text: 'No credit card required' },
-  { icon: Clock, text: 'Setup in 5 minutes' },
+  { icon: Check, text: 'Setup in 5 minutes' },
+  { icon: Clock, text: 'Starting at $1,497' },
   { icon: Shield, text: 'SSL Encrypted' },
   { icon: Zap, text: 'Cancel anytime' },
 ];
@@ -66,7 +66,7 @@ export const Hero = () => {
                 className="bg-cyan-500 hover:bg-cyan-400 text-black font-semibold px-8 py-6 text-lg rounded-full btn-glow cta-button transition-all duration-300"
                 data-testid="hero-cta-primary"
               >
-                Start Free Trial
+                Book A Call
               </Button>
               <Button
                 size="lg"
