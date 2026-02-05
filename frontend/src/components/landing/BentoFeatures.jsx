@@ -4,18 +4,63 @@ import {
   Phone, 
   MessageSquare, 
   Database, 
-  Clock,
-  Mic,
-  Zap,
-  Calendar,
-  Shield
+  Clock
 } from 'lucide-react';
+
+const BentoCard = ({ item, index, isInView }) => {
+  const IconComponent = item.icon;
+  
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.5, delay: 0.1 * index }}
+      className={`${item.colSpan} glass-card rounded-3xl p-8 feature-card group`}
+      data-testid={`bento-card-${index}`}
+    >
+      <div className={`w-14 h-14 rounded-2xl mb-6 flex items-center justify-center ${
+        item.color === 'cyan' ? 'bg-cyan-500/20 group-hover:bg-cyan-500/30' :
+        item.color === 'purple' ? 'bg-purple-500/20 group-hover:bg-purple-500/30' :
+        'bg-pink-500/20 group-hover:bg-pink-500/30'
+      } transition-colors duration-300`}>
+        <IconComponent className={`w-7 h-7 ${
+          item.color === 'cyan' ? 'text-cyan-400' :
+          item.color === 'purple' ? 'text-purple-400' :
+          'text-pink-400'
+        }`} />
+      </div>
+      
+      <h3 className="text-xl md:text-2xl font-semibold text-white mb-3">
+        {item.title}
+      </h3>
+      <p className="text-gray-400 mb-6 leading-relaxed">
+        {item.description}
+      </p>
+      
+      <ul className="space-y-2">
+        {item.features.map((feature, fIndex) => (
+          <li 
+            key={fIndex}
+            className="flex items-center gap-2 text-sm text-gray-500"
+          >
+            <span className={`w-1.5 h-1.5 rounded-full ${
+              item.color === 'cyan' ? 'bg-cyan-500' :
+              item.color === 'purple' ? 'bg-purple-500' :
+              'bg-pink-500'
+            }`} />
+            {feature}
+          </li>
+        ))}
+      </ul>
+    </motion.div>
+  );
+};
 
 const bentoItems = [
   {
     icon: Phone,
     title: 'AI Phone Answering',
-    description: 'Your AI answers 24/7, responds naturally, and captures what you need—so you don\'t lose leads while you\'re working.',
+    description: "Your AI answers 24/7, responds naturally, and captures what you need—so you don't lose leads while you're working.",
     features: [
       'Answers calls in seconds, 24/7',
       'Qualifies leads with your questions',
@@ -93,52 +138,9 @@ export const BentoFeatures = () => {
           </p>
         </motion.div>
 
-        {/* Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
           {bentoItems.map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.1 * index }}
-              className={`${item.colSpan} glass-card rounded-3xl p-8 feature-card group`}
-              data-testid={`bento-card-${index}`}
-            >
-              <div className={`w-14 h-14 rounded-2xl mb-6 flex items-center justify-center ${
-                item.color === 'cyan' ? 'bg-cyan-500/20 group-hover:bg-cyan-500/30' :
-                item.color === 'purple' ? 'bg-purple-500/20 group-hover:bg-purple-500/30' :
-                'bg-pink-500/20 group-hover:bg-pink-500/30'
-              } transition-colors duration-300`}>
-                <item.icon className={`w-7 h-7 ${
-                  item.color === 'cyan' ? 'text-cyan-400' :
-                  item.color === 'purple' ? 'text-purple-400' :
-                  'text-pink-400'
-                }`} />
-              </div>
-              
-              <h3 className="text-xl md:text-2xl font-semibold text-white mb-3">
-                {item.title}
-              </h3>
-              <p className="text-gray-400 mb-6 leading-relaxed">
-                {item.description}
-              </p>
-              
-              <ul className="space-y-2">
-                {item.features.map((feature, fIndex) => (
-                  <li 
-                    key={fIndex}
-                    className="flex items-center gap-2 text-sm text-gray-500"
-                  >
-                    <span className={`w-1.5 h-1.5 rounded-full ${
-                      item.color === 'cyan' ? 'bg-cyan-500' :
-                      item.color === 'purple' ? 'bg-purple-500' :
-                      'bg-pink-500'
-                    }`} />
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
+            <BentoCard key={index} item={item} index={index} isInView={isInView} />
           ))}
         </div>
       </div>
