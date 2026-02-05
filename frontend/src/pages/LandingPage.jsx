@@ -1,6 +1,4 @@
-import { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import Lenis from '@studio-freight/lenis';
 import { Navbar } from '@/components/landing/Navbar';
 import { Hero } from '@/components/landing/Hero';
 import { ProblemSection } from '@/components/landing/ProblemSection';
@@ -14,25 +12,6 @@ import { FinalCTA } from '@/components/landing/FinalCTA';
 import { Footer } from '@/components/landing/Footer';
 
 export default function LandingPage() {
-  useEffect(() => {
-    const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      smoothWheel: true,
-    });
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-
-    return () => {
-      lenis.destroy();
-    };
-  }, []);
-
   return (
     <motion.div 
       initial={{ opacity: 0 }}
