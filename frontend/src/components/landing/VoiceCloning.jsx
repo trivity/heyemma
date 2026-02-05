@@ -23,7 +23,7 @@ export const VoiceCloning = () => {
   return (
     <section 
       id="voice-cloning"
-      className="relative py-24 md:py-32"
+      className="relative py-12 md:py-16"
       data-testid="voice-cloning-section"
     >
       {/* Background glow */}

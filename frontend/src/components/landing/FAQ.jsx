@@ -49,7 +49,7 @@ export const FAQ = () => {
   return (
     <section 
       id="faq"
-      className="relative py-24 md:py-32"
+      className="relative py-12 md:py-16"
       data-testid="faq-section"
     >
       <div className="container-custom" ref={ref}>

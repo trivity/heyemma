@@ -12,7 +12,7 @@ const trustBadges = [
 export const Hero = () => {
   return (
     <section 
-      className="relative min-h-screen pt-32 pb-20 md:pt-40 md:pb-32"
+      className="relative pt-24 pb-12 md:pt-28 md:pb-16"
       data-testid="hero-section"
     >
       <div className="container-custom">

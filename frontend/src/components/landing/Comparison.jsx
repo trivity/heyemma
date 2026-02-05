@@ -52,7 +52,7 @@ export const Comparison = () => {
 
   return (
     <section 
-      className="relative py-24 md:py-32 bg-gradient-to-b from-transparent via-[#0a0a0a] to-transparent"
+      className="relative py-12 md:py-16 bg-gradient-to-b from-transparent via-[#0a0a0a] to-transparent"
       data-testid="comparison-section"
     >
       <div className="container-custom" ref={ref}>

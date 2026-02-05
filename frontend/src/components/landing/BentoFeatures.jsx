@@ -13,7 +13,7 @@ export const BentoFeatures = () => {
 
   return (
     <section 
-      className="relative py-24 md:py-32"
+      className="relative py-12 md:py-16"
       data-testid="bento-features-section"
     >
       <div className="container-custom" ref={ref}>

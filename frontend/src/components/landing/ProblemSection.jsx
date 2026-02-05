@@ -47,7 +47,7 @@ export const ProblemSection = () => {
 
   return (
     <section 
-      className="relative py-24 md:py-32"
+      className="relative py-12 md:py-16"
       data-testid="problem-section"
     >
       {/* Background image overlay */}

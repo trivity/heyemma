@@ -54,7 +54,7 @@ export const HowItWorks = () => {
   return (
     <section 
       id="how-it-works"
-      className="relative py-24 md:py-32 bg-gradient-to-b from-transparent via-[#0a0a0a] to-transparent"
+      className="relative py-12 md:py-16 bg-gradient-to-b from-transparent via-[#0a0a0a] to-transparent"
       data-testid="how-it-works-section"
     >
       <div className="container-custom" ref={ref}>

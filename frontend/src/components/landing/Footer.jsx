@@ -25,7 +25,7 @@ export const Footer = () => {
 
   return (
     <footer 
-      className="relative py-16 md:py-24 border-t border-white/5"
+      className="relative py-10 md:py-14 border-t border-white/5"
       data-testid="footer"
     >
       <div className="container-custom">

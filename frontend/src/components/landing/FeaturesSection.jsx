@@ -43,7 +43,7 @@ export const FeaturesSection = () => {
   return (
     <section 
       id="features"
-      className="relative py-24 md:py-32"
+      className="relative py-12 md:py-16"
       data-testid="features-section"
     >
       <div className="container-custom" ref={ref}>
