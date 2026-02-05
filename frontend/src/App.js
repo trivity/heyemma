@@ -5,20 +5,16 @@ import LandingPage from "@/pages/LandingPage";
 
 function App() {
   useEffect(() => {
-    // Add ElevenLabs script dynamically
-    const script = document.createElement('script');
-    script.src = 'https://unpkg.com/@elevenlabs/convai-widget-embed';
-    script.async = true;
-    script.type = 'text/javascript';
-    document.body.appendChild(script);
-
-    return () => {
-      // Cleanup script on unmount
-      const existingScript = document.querySelector('script[src="https://unpkg.com/@elevenlabs/convai-widget-embed"]');
-      if (existingScript) {
-        document.body.removeChild(existingScript);
-      }
-    };
+    // Only add script if not already loaded
+    const existingScript = document.querySelector('script[src="https://unpkg.com/@elevenlabs/convai-widget-embed"]');
+    if (!existingScript && !window.__elevenLabsLoaded) {
+      window.__elevenLabsLoaded = true;
+      const script = document.createElement('script');
+      script.src = 'https://unpkg.com/@elevenlabs/convai-widget-embed';
+      script.async = true;
+      script.type = 'text/javascript';
+      document.body.appendChild(script);
+    }
   }, []);
 
   return (
