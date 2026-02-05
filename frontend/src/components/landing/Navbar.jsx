@@ -41,7 +41,8 @@ export const Navbar = () => {
             <img 
               src={LOGO_URL} 
               alt="HeyEmma" 
-              className="h-10 md:h-14 w-auto object-contain brightness-110"
+              className="h-12 md:h-16 w-auto object-contain"
+              style={{ filter: 'brightness(1.2) contrast(1.1)' }}
             />
           </a>
 
