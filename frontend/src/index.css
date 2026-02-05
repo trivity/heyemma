@@ -158,6 +158,11 @@ elevenlabs-convai {
 
 /* Hide Emergent badge */
 #emergent-badge,
-[id*="emergent-badge"] {
+[id*="emergent-badge"],
+[class*="emergent-badge"],
+a[href*="emergent"],
+div[id="emergent-badge"] {
   display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
 }
