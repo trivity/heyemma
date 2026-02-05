@@ -64,12 +64,12 @@ export const ProblemSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-8"
         >
-          <span className="text-sm font-medium tracking-wider uppercase text-cyan-500 mb-4 block">
+          <span className="text-sm font-medium tracking-wider uppercase text-cyan-500 mb-2 block">
             The Problem
           </span>
-          <h2 className="font-heading text-3xl md:text-5xl font-semibold tracking-tight mb-6">
+          <h2 className="font-heading text-2xl md:text-4xl font-semibold tracking-tight mb-3">
             Missed calls cost more than you think
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">

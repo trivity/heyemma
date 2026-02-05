@@ -60,12 +60,12 @@ export const Comparison = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-8"
         >
-          <h2 className="font-heading text-3xl md:text-5xl font-semibold tracking-tight mb-4">
+          <h2 className="font-heading text-2xl md:text-4xl font-semibold tracking-tight mb-2">
             One system, not five tools
           </h2>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base text-gray-400 max-w-2xl mx-auto">
             Start with AI answering. Then, when you're ready, keep proposals, payments, and 
             client delivery in the same system—so you're not stitching apps together.
           </p>

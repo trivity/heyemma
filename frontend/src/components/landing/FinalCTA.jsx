@@ -43,12 +43,12 @@ export const FinalCTA = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-8"
         >
-          <h2 className="font-heading text-3xl md:text-5xl font-semibold tracking-tight mb-4">
+          <h2 className="font-heading text-2xl md:text-4xl font-semibold tracking-tight mb-2">
             Try it risk-free for <span className="text-gradient">14 days</span>
           </h2>
-          <p className="text-lg text-gray-400 max-w-xl mx-auto">
+          <p className="text-base text-gray-400 max-w-xl mx-auto">
             We're so confident you'll love HeyEmma that we offer a complete money-back guarantee. 
             No risk, no hassle.
           </p>
@@ -59,7 +59,7 @@ export const FinalCTA = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
+          className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10"
         >
           {guarantees.map((item, index) => (
             <div

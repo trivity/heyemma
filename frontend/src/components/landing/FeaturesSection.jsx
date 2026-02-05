@@ -47,20 +47,20 @@ export const FeaturesSection = () => {
       data-testid="features-section"
     >
       <div className="container-custom" ref={ref}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Column - Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-sm font-medium tracking-wider uppercase text-purple-400 mb-4 block">
+            <span className="text-sm font-medium tracking-wider uppercase text-purple-400 mb-2 block">
               Beyond Basic Answering
             </span>
-            <h2 className="font-heading text-3xl md:text-5xl font-semibold tracking-tight mb-6">
+            <h2 className="font-heading text-2xl md:text-4xl font-semibold tracking-tight mb-4">
               More than an answering service
             </h2>
-            <p className="text-lg text-gray-400 mb-10 leading-relaxed">
+            <p className="text-base text-gray-400 mb-6 leading-relaxed">
               Your AI doesn't just pick up—it talks to your entire CRM. Create leads, 
               trigger follow-ups, and book appointments automatically. Everything stays 
               connected to the same customer record.

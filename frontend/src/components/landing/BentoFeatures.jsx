@@ -21,12 +21,12 @@ export const BentoFeatures = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-8"
         >
-          <h2 className="font-heading text-3xl md:text-5xl font-semibold tracking-tight mb-4">
+          <h2 className="font-heading text-2xl md:text-4xl font-semibold tracking-tight mb-2">
             AI phone answering, built for <span className="text-gradient">business</span>
           </h2>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base text-gray-400 max-w-2xl mx-auto">
             Lead with voice. Then automate the follow-up. Finally, keep every opportunity organized in one place.
           </p>
         </motion.div>

@@ -62,15 +62,15 @@ export const HowItWorks = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-8"
         >
-          <span className="text-sm font-medium tracking-wider uppercase text-cyan-500 mb-4 block">
+          <span className="text-sm font-medium tracking-wider uppercase text-cyan-500 mb-2 block">
             Not just answering
           </span>
-          <h2 className="font-heading text-3xl md:text-5xl font-semibold tracking-tight mb-4">
+          <h2 className="font-heading text-2xl md:text-4xl font-semibold tracking-tight mb-2">
             A full sales assistant
           </h2>
-          <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-base md:text-lg text-gray-400 max-w-3xl mx-auto">
             How it works (and why it makes you money)
           </p>
         </motion.div>
@@ -80,7 +80,7 @@ export const HowItWorks = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="relative mb-20"
+          className="relative mb-10"
         >
           {/* Connection line */}
           <div className="hidden md:block absolute top-1/2 left-[10%] right-[10%] h-px bg-gradient-to-r from-cyan-500/50 via-purple-500/50 to-pink-500/50" />
